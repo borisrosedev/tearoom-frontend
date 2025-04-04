@@ -1,0 +1,17 @@
+
+
+@mixin createFixedElement($top: 0, $left: 0, $right: 0){
+    position: fixed;
+    z-index: 20;
+
+    @if $top == 0 {
+        right: $right;
+        left: $left;
+        top: 0;
+    }
+
+    right: $right;
+    left: $left;
+    top: $top;
+
+}

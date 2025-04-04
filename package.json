@@ -4,7 +4,9 @@
   "description": "- Dans Social Engering Toolkit : WebAttack  -- Template prédéfinis  -- Site Cloner en Live -- Custom",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "build": "webpack",
+    "deploy": "npm install && npm run build"
   },
   "keywords": [],
   "author": "",

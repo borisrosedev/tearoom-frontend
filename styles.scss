@@ -1,1 +1,4 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+@use "./src/sass/vendor/bulma.vendor";
+@use "./src/sass/abstracts/mixins";
+@use "./src/sass/base/base.page";
+@use "./src/sass/pages/login.page";

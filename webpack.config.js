@@ -9,31 +9,14 @@ const HtmlPlugin = require('html-webpack-plugin')
 // dès que vous voyez des 
 module.exports = {
     entry: "./main.ts",
-    output: {
-        filename: "[name].bundle.js", //nom du fichier bundle,
-        path: path.resolve(__dirname, "dist")
-    },
+    extends: [
+        path.resolve(__dirname, 'webpack', 'base.config.js')
+    ],
     resolve: {
         extensions: [".ts", ".js"]
     },
     mode: "development",
-    module: {
-        rules: [
-            {
-                test: /\.(jpe?g|png|webp|gif)$/,
-                type: 'asset/resource' 
-            },
-            {
-                test: /\.ts$/,
-                loader: 'ts-loader'
-            },
-            {
-                test: /\.(s[ac]ss)$/,
-                //  test: /\.(scss|sass)$/
-                use: ["style-loader","css-loader","sass-loader"]
-            }
-        ]
-    },
+   
     plugins: [
         new HtmlPlugin({
             template: './index.html'
