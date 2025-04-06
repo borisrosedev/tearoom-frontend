@@ -16,11 +16,12 @@ export default class ApiDataSource {
         }
     }
 
-    static async send({ url , token, data, method }: { url: string, token?: string, data: any, method: string }) {
+    static async send(url: string, data: any, type?: string, method?: string, token?: string) {
         try {
             const result = await fetch(url, {
                 method: method ?? 'POST',
                 headers: {
+                    "Content-Type" : type ?? "application/json",
                     "Authorisation" : 'Bearer ' + (token ?? '')
                 },
                 body: JSON.stringify(data)

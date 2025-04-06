@@ -24,15 +24,7 @@ export default class LoginContainer extends BaseContainer {
             const firstNameInputValue = (document.getElementById('firstname') as HTMLInputElement).value 
             const lastNameInputValue = (document.getElementById('lastname') as HTMLInputElement).value 
             
-            const response = await new UsersService().register({ 
-                email: emailInputValue, 
-                password: passwordInputValue, 
-                firstname: firstNameInputValue, 
-                lastname: lastNameInputValue 
-            })
-
-            console.log('✅ REPONSE LOGIN CONTAINER', response)
-
+          
         }
       
     }

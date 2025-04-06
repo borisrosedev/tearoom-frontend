@@ -17,7 +17,7 @@ export default function router (h: string) {
     const ROOT = document.getElementById('root') as HTMLElement;
     switch(h){
         case ROUTES.landing.path:
-            ROOT.innerHTML =   ""
+            ROOT.innerHTML =   ROUTES.landing.ui()
             break;
         case ROUTES.login.path:
             ROOT.innerHTML =   ROUTES.login.ui()

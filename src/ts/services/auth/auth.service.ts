@@ -7,10 +7,11 @@ class AuthService {
     constructor(){}
     async login({ email, password}: { email: string, password: string }) {
         const self = this
-        const token = await ApiDataSource.send({
-            url: self.hostname + "/api/v1/login",
-            data: { email, password },
-            method: "POST"
-        })
+        const token = await ApiDataSource.send(
+            self.hostname + "/api/v1/login",
+            {email, password}
+        )
     }
 }
+
+export default AuthService

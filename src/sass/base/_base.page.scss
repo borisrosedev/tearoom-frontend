@@ -1,15 +1,19 @@
-tearoom-main {
+.tearoom-main {
     display: flex;
     padding-inline: 10vh;
-
-
+    background-image: url('/assets/images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 15vh;
 
 }
 
-tearoom-header {
+.tearoom-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 1Ovh;
+    height: 15vh;
     
 }
