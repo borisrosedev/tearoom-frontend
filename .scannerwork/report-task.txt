@@ -1,0 +1,6 @@
+projectKey=TeaRoom-Frontend
+serverUrl=http://localhost:9000
+serverVersion=25.3.0.104237
+dashboardUrl=http://localhost:9000/dashboard?id=TeaRoom-Frontend
+ceTaskId=8849ef8f-60fa-4aae-afcb-ee075befc246
+ceTaskUrl=http://localhost:9000/api/ce/task?id=8849ef8f-60fa-4aae-afcb-ee075befc246

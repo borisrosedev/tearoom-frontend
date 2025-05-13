@@ -1,4 +1,11 @@
 
+@mixin createCircle($d: 200px) {
+    width: $d;
+    height: $d;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
 
 @mixin createFixedElement($top: 0, $left: 0, $right: 0){
     position: fixed;

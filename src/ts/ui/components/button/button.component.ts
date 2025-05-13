@@ -6,7 +6,7 @@ export default function buttonComponent ({ id ,  textContent, type, classNames }
             <button 
                 id="${id}" 
                 type="${type ?? 'button'}"
-                class="button ${classNames ?? ''}"
+                class="button animate__animated ${classNames ?? ''}"
             >${textContent}</button>
         
         `

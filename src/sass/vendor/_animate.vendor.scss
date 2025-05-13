@@ -1,0 +1,12 @@
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 2s;
+
+    & button {
+        --animation-timing-function: cubic-bezier(0,.77,.45,.99);
+    }
+    
+    :has(img){
+        --animation-timing-function: cubic-bezier(0,.57,.6,.98) ;
+    }
+}
+  

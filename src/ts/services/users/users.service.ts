@@ -2,22 +2,14 @@ import ApiDataSource from "../../data-sources/api.datasource"
 
 
 export default class UsersService {
-    hostname = "http://localhost:3000"
+    hostname = "http://tearoom-alb-1498542559.eu-west-3.elb.amazonaws.com"
     constructor(){}
 
-    async login({ email, password }: any) {
-        const self = this
-        const response = await ApiDataSource.send(
-            self.hostname + "/api/v1/register",
-            { email, password }
-        )
-        const token = await response.json()
-        localStorage.setItem('tearoom:token', token)
-    }
+   
     async register(formData: FormData) {
         const self = this
         const response = await ApiDataSource.send(
-            self.hostname + "/api/v1/register",
+            self.hostname + "/api/v1/user",
             formData,
             "mutipart/form-data"
         )
